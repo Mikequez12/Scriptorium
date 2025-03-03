@@ -111,7 +111,8 @@ button.CHOICE {
     width: 0%;
     border: solid 1px white;
     border-radius: 5px;
-    background: #fff6;
+    background: linear-gradient(to bottom,#0003,#000c);
+    backdrop-filter: blur(5px);
     color: white;
     transition: 1s;
     display: block;
