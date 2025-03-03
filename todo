@@ -1,0 +1,16 @@
+# MAIN
+- startGame() // In game.js [ARREGLADO]
+- CSS
+    - Backdrop-filter no funciona [ARREGLADO]
+- Añadir censorship() [HECHO]
+- Agregar el título del sujeto [HECHO]
+- Crear la interfaz de CHOOSE [HECHO]
+- Añadir los bloques especiales de tipo condición [HECHO]
+- Añadir icono al botón de "siguiente"
+- Buscar una fuente apropiada
+- Buscar artista
+- Seguir con la historia
+    - Corregir la historia
+
+# POSTERIOR
+- Dev del editor visual
