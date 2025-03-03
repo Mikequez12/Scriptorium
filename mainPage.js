@@ -32,7 +32,7 @@ var gameFiles;
 
 async function findGame(event) {
     const parentCall = event.target.parentElement;
-    let toplevel = parentCall//document.body.appendChild(document.createElement('toplevel'));
+    let toplevel = parentCall;//document.body.appendChild(document.createElement('toplevel'));
 
     game.url = `${parentCall.querySelector('input').value}`;
 
