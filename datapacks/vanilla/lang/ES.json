@@ -270,9 +270,9 @@
         ".type":"COMMAND",
         "background":"backgrounds/living-room.jpeg"
     },
-    [{".type":"GET",".get":"default.player.name"},"¡Aquí estás!"],
-    [{".type":"GET",".get":"default.player.name"},"Y yo buscando mi teléfono..."],
-    [{".type":"GET",".get":"default.player.name"},"No tengo hambre, así que me sobra un rato."],
+    [{".type":"GET",".get":"default.player.name"},"Por fin en casa..."],
+    [{".type":"GET",".get":"default.player.name"},"Hay veces en las que me cuestiono si salir merece la pena si este lugar esta siendo moldeado por mí para que sea perfecto..."],
+    [{".type":"GET",".get":"default.player.name"},"En fin... No tengo hambre, así que me sobra un rato."],
     {
         ".type":"CHOOSE",
         "Ver la tele":[
@@ -414,17 +414,17 @@
                 "background":"backgrounds/streets.webp"
             },
             [{".type":"GET",".get":"default.player.name"},"Salir a correr es lo más sano."],
-            ["???","La verdad es que no puede parar de pensar en Fred"],
+            ["???","La verdad es que no pude parar de pensar en Fred."],
             ["???","Veo que estabas muy enamorado de él... ¿Qué crees que le hacía destacar?"],
             ["???","Siempre ha sido único."],
             ["???","Como digas... Continúa."],
             ["???","Tras un buen paseo, entré en mi ordenador y empezé a trabajar."]
         ],
         ".false":[
-            ["???","Hice mi rutina de deporte y comencé a trabajar de nuevo en el proyecto"]
+            ["???","Hice mi rutina de deporte y comencé a trabajar de nuevo en el proyecto."]
         ]
     },
-    [{".type":"GET",".get":"default.player.name"},"Debo hacer el face-time"],
+    [{".type":"GET",".get":"default.player.name"},"Debo hacer el face-time."],
     {
         ".type":"COMMAND",
         "background":"backgrounds/living-room.jpeg"
@@ -512,7 +512,7 @@
     ["???","Oí una notificación que parecía venir del teléfono de Jessie."],
     ["Jessie","Hablando de ",{".type":"CENSOR",".text":"órganos"}," , le dije ayer al laboratorio que mandaran los resultados en cuanto pudieran y aquí los tengo."],
     ["Inspector","¿Y bien?"],
-    ["Jessie","Han mandado los gráficos, pero no han mandado ninguna explicación."],
+    ["Jessie","Han mandado los gráficos, pero no han mandado ninguna explicación, no sé cómo leer los datos."],
     ["Fred","Llama a Thomas."],
     ["Jessie","¡Hey, Tom!"],
     [{".type":"GET",".get":"default.player.name"},"¿Thomas?"],
