@@ -219,6 +219,10 @@
                     ["Fred","Estas guap",{".type":"GET",".get":"player.gender.o_a"},"."],
                     ["Fred","Osea, quiero decir que te queda bien..."],
                     ["???","El brillo de sus ojos me mantuvo encandilad",{".type":"GET",".get":"player.gender.o_a"}," durante toda la cena."],
+                    {
+                        ".type":"COMMAND",
+                        "background":"backgrounds/CiPASSO.jpg"
+                    },
                     [{".type":"GET",".get":"default.player.name"},"..."],
                     ["Fred","¿Me estás escuchando?"],
                     [{".type":"GET",".get":"default.player.name"},"Disculpa, yo..."],
@@ -393,42 +397,36 @@
                     [{".type":"GET",".get":"default.player.name"},"Salir a correr, pero llamarte me parece más productivo."],
                     ["Fred","Gracias, creo."],
                     ["???","Mantuvimos una larga conversación hasta que miré el reloj."],
-                    [{".type":"GET",".get":"default.player.name"},"Me encantaría seguir hablando, Fred, pero tengo que investigar más. Adiós."],
-                    ["Fred","Adiós."]
+                    [{".type":"GET",".get":"default.player.name"},"Me encantaría seguir hablando, Fred, pero tenemos el facetime en unos minutos."],
+                    ["Fred","Lo olvidaba por completo... Adiós."]
                 ],
-                "Salir a correr":[]
+                "Salir a correr":[
+                    {
+                        ".type":"COMMAND",
+                        "background":"backgrounds/streets.webp"
+                    },
+                    [{".type":"GET",".get":"default.player.name"},"Salir a correr es lo más sano."],
+                    ["???","La verdad es que no pude parar de pensar en Fred."],
+                    ["???","Veo que estabas muy enamorado de él... ¿Qué crees que le hacía destacar?"],
+                    ["???","Siempre ha sido único."],
+                    ["???","Como digas... Continúa."],
+                    ["???","Tras un buen paseo, entré en mi ordenador y empezé a trabajar."]
+                ]
             }
         ],
-        ".false":[]
-    },
-    {  
-        ".type":"CONDITION",
-        ".condition":{
-            ".type":"OPERATION",
-            "value":"game.keys",
-            "has":"FredIII"
-        },
-        ".true":[
+        ".false":[
             {
                 ".type":"COMMAND",
                 "background":"backgrounds/streets.webp"
             },
-            [{".type":"GET",".get":"default.player.name"},"Salir a correr es lo más sano."],
-            ["???","La verdad es que no pude parar de pensar en Fred."],
-            ["???","Veo que estabas muy enamorado de él... ¿Qué crees que le hacía destacar?"],
-            ["???","Siempre ha sido único."],
-            ["???","Como digas... Continúa."],
-            ["???","Tras un buen paseo, entré en mi ordenador y empezé a trabajar."]
-        ],
-        ".false":[
             ["???","Hice mi rutina de deporte y comencé a trabajar de nuevo en el proyecto."]
         ]
     },
-    [{".type":"GET",".get":"default.player.name"},"Debo hacer el face-time."],
     {
         ".type":"COMMAND",
         "background":"backgrounds/living-room.jpeg"
     },
+    [{".type":"GET",".get":"default.player.name"},"Debo hacer el face-time."],
     {
         ".type":"CONDITION",
         ".condition":{
@@ -438,8 +436,8 @@
         },
         ".true":[
             [{".type":"GET",".get":"default.player.name"},"Bien. Como podéis ver, mi teoría de que el ",{".type":"CENSOR",".text":"cadaver"}," fue movido, tiene una estructura sólida, y esto podría inculpar a los dueños del negocio, aunque también puede ser ser que lo hicieran ellos mismos para tratar de distraernos, todo puede ser."],
-            [{".type":"GET",".get":"default.player.name"},"Ahora, por favor, prestad atención a la tercera foto; la de la esquina. Podéis ver que el rastro de ",{".type":"CENSOR",".text":"sangre"}," demuestra que fue arrastrado, si no, estas marcas no tendrían lugar alguno. Aunque están escondidas, sí que parecen estar escondidas a propósito."],
-            ["Inspector","Muy buen trabajo, ",{".type":"GET",".get":"default.player.name"}," esto puede ayudarnos en nuevas teorías."],
+            [{".type":"GET",".get":"default.player.name"},"Ahora, por favor, prestad atención a la tercera foto; la de la esquina. Podéis ver que esa mancha de ",{".type":"CENSOR",".text":"sangre"}," demuestra que fue arrastrado, si no, estas marcas no tendrían lugar alguno. Aunque están escondidas... Parecen estar escondidas a propósito."],
+            ["Inspector","Muy buen trabajo, ",{".type":"GET",".get":"default.player.name"},"; esto puede ayudarnos en nuevas teorías."],
             ["Jessie","Bien; ¿Qué procede ahora?"],
             {
                 ".type":"CONDITION",
@@ -510,7 +508,7 @@
     ["Inspector","Por cierto, según el fichero de Jessie, encontrasteis unas jarras o botellas con ",{".type":"CENSOR",".text":"órganos"},"."],
     ["Fred","Así es..."],
     ["???","Oí una notificación que parecía venir del teléfono de Jessie."],
-    ["Jessie","Hablando de ",{".type":"CENSOR",".text":"órganos"}," , le dije ayer al laboratorio que mandaran los resultados en cuanto pudieran y aquí los tengo."],
+    ["Jessie","Hablando de ",{".type":"CENSOR",".text":"órganos"},"... Le dije ayer al laboratorio que mandaran los resultados en cuanto pudieran y aquí los tengo."],
     ["Inspector","¿Y bien?"],
     ["Jessie","Han mandado los gráficos, pero no han mandado ninguna explicación, no sé cómo leer los datos."],
     ["Fred","Llama a Thomas."],
