@@ -43,7 +43,7 @@ function setGameVarSet(path,value) {
 }
 
 function readScript() {
-    let line = new Line(game.script[game.line]);
+    var line = new Line(game.script[game.line]);
 
     console.info(line);
 
