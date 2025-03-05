@@ -84,7 +84,7 @@ function readScript() {
                     if (result == line.value['.condition']['.equal']) {
                         return '.true';
                     } else {
-                        console.log('.false')
+                        return '.false';
                     }
                 } else if (line.value['.condition']['has']) {
                     return getJSON(game.varSet,line.value['.condition']['value'].split('.')).includes(line.value['.condition']['has'])?'.true':'.false';
