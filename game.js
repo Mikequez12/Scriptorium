@@ -42,9 +42,8 @@ function setGameVarSet(path,value) {
     current[path[path.length - 1]] = value; // Asigna el valor final
 }
 
-var line;
 function readScript() {
-    line = new Line(game.script[game.line]);
+    let line = new Line(game.script[game.line]);
 
     console.info('LINE:',line);
 
