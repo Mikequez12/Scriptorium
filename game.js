@@ -55,6 +55,7 @@ function readScript() {
             document.querySelector('img#bg').style.filter = `brightness(0)`;
             setTimeout(() => {
                 document.querySelector('img#bg').src = `${game.url}/${line.value.background}`;
+                console.log(game.url,line.value.background);
                 document.querySelector('img#bg').style.filter = `brightness(1)`;
             },500)
         };
