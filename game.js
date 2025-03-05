@@ -46,7 +46,7 @@ var line;
 function readScript() {
     line = new Line(game.script[game.line]);
 
-    console.info(line);
+    console.info('LINE:',line);
 
     if (line.type === undefined) {
         console.error(`UNKNOWN TYPE\n${line.value}`)
