@@ -94,6 +94,7 @@ function readScript() {
             }
         }
         key = key();
+        console.info('KEY:')
         console.info(key);
         
         console.log(line.value);
