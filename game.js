@@ -76,7 +76,7 @@ function readScript() {
         game.line++;
         readScript()
     } else if (line.type === 'CONDITION') {
-        key = function() {
+        getKey = function() {
             if (line.value['.condition']['.type'] === 'OPERATION') {
                 if (line.value['.condition']['.equal']) {
                     result = get(line.value['.condition']['.value']);
@@ -92,8 +92,8 @@ function readScript() {
                     console.info(line.value);
                 }
             }
-        }
-        key = key();
+        };
+        key = getKey();
         console.info('KEY:')
         console.info(key);
         
