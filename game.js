@@ -77,6 +77,7 @@ function readScript() {
         readScript()
     } else if (line.type === 'CONDITION') {
         getKey = function() {
+            line = new Line(game.script[game.line]);
             if (line.value['.condition']['.type'] === 'OPERATION') {
                 if (line.value['.condition']['.equal']) {
                     result = get(line.value['.condition']['.value']);
