@@ -527,7 +527,7 @@
     ["Inspector","Entendido. Pediré al laboratorio que examinen cuanto antes la ",{".type":"CENSOR",".text":"sangre"},". Ahora, id a Chirico."],
     {
         ".type":"COMMAND",
-        "background":"backgrounds/waiterhouse.jpg"
+        "background":"backgrounds/waitershouse.jpg"
     },
     ["Fred","Buenos días."],
     ["Giorgia","Buenos días, agente. ¿Qué le trae por aquí?"],
