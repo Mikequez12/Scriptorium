@@ -524,5 +524,32 @@
     ["Thomas","Entonces es post-muerte, es raro pero posible que termine en el corazón, pero ya es una casualidad espectacular si termina en el corazón sin tocar nada más..."],
     ["Inspector","¿Puedes verificarlo?"],
     ["Thomas","Aún no han mirado la ",{".type":"CENSOR",".text":"sangre"},". Cuando la miren, si tiene el mismo ADN pero solo parece tener trazas de mercurio, tengo razón."],
-    ["Inspector","Entendido. Pediré al laboratorio que examinen cuanto antes la ",{".type":"CENSOR",".text":"sangre"},". Ahora, id a Chirico."]
+    ["Inspector","Entendido. Pediré al laboratorio que examinen cuanto antes la ",{".type":"CENSOR",".text":"sangre"},". Ahora, id a Chirico."],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/waiterhouse.jpg"
+    },
+    ["Fred","Buenos días."],
+    ["Giorgia","Buenos días, agente. ¿Qué le trae por aquí?"],
+    [{".type":"GET",".get":"default.player.name"},"Hola. Venimos por..."],
+    ["Giorgia","¿El... incidente?"],
+    ["Fred","Sí... El incidente..."],
+    ["Giorgia","¿Tienen una orden?"],
+    ["Fred","No."],
+    ["Giorgia","¿Van a detenerme?"],
+    ["Fred","No."],
+    ["Giorgia","Entonces tengan un buen día."],
+    ["???","Recuerdo perfectamente la manera en la que sonreía mientras cerraba la puerta y cómo yo reaccioné rápidamente poniendo mi pie bloqueando esta."],
+    [{".type":"GET",".get":"default.player.name"},"Nos vendría muy bien la colaboración ciudadana..."],
+    ["Giorgia","Oigan, ójala pudiera ayudarles pero..."],
+    [{".type":"GET",".get":"default.player.name"},"No parece querer hacerlo..."],
+    ["Giorgia","Esa acusación es muy grave."],
+    [{".type":"GET",".get":"default.player.name"},"¿Sabe también qué es grave? Massimo, nuestro compañero de la comisaría. ¿Sabe? Nosotros no somos violentos. No usamos la fuerza, y somos tranquilos y serenos, pero él no dudara ni un segundo en tirarse encima de tí si ve... Algo raro mientras te interrogamos cuando obtengamos la orden, pronostico que menos de 24 horas. Claro que Algo... Raro, es un tema ambíguo, y podría herirte por una... Falsa alarma..."],
+    ["Giorgia","Yo no tengo nada que ver."],
+    ["Fred","Demuéstralo entonces."],
+    ["Giorgia","... Está bien... Pasad."],
+    {
+        ".type":"COMMAND",
+        "background":"background/waiterhouseinterior.jpg"
+    }
 ]
