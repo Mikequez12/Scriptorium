@@ -544,12 +544,40 @@
     ["Giorgia","Oigan, ójala pudiera ayudarles pero..."],
     [{".type":"GET",".get":"default.player.name"},"No parece querer hacerlo..."],
     ["Giorgia","Esa acusación es muy grave."],
-    [{".type":"GET",".get":"default.player.name"},"¿Sabe también qué es grave? Massimo, nuestro compañero de la comisaría. ¿Sabe? Nosotros no somos violentos. No usamos la fuerza, y somos tranquilos y serenos, pero él no dudara ni un segundo en tirarse encima de tí si ve... Algo raro mientras te interrogamos cuando obtengamos la orden, pronostico que menos de 24 horas. Claro que Algo... Raro, es un tema ambíguo, y podría herirte por una... Falsa alarma..."],
+    [{".type":"GET",".get":"default.player.name"},"¿Sabe también qué es grave? Massimo, nuestro compañero de la comisaría. ¿Sabe? Nosotros no somos violentos. No usamos la fuerza, y somos tranquilos y serenos, pero él no dudará ni un segundo en tirarse encima de tí si ve... Algo raro mientras te interrogamos cuando obtengamos la orden, pronostico que menos de 24 horas. Claro que Algo... Raro, es un tema ambíguo, y podría herirte por una... Falsa alarma..."],
     ["Giorgia","Yo no tengo nada que ver."],
     ["Fred","Demuéstralo entonces."],
     ["Giorgia","... Está bien... Pasad."],
     {
         ".type":"COMMAND",
-        "background":"background/waiterhouseinterior.jpg"
-    }
+        "background":"background/waiteshouseinterior.jpg"
+    },
+    ["Giorgia","Siempre solía ver alguna gente trajeada susurrar a otros al oído, pero pensaba que era símplemente un tema de ",{".type":"CENSOR",".text":"droga"},". Me acuerdo perfectamente de la noche en la que descubrí la verdad. Bueno, cómo olvidarla..."],
+    ["Giorgia","Estaba cerrando, ya eran las 2AM, y pensé que sería como cualquier otro cierre: echar a patadas a algunos y meter las bebidas de nuevo en la nevera, pero accidentalmente empujé el fondo y descubrí la habitación tras la pared."],
+    ["Giorgia","Al principio pensé que era donde guardaban el dinero, y que no me debería meter, pero... Honestamente algo no encajaba, y lo que creo que era mi instinto me llamaba."],
+    ["Fred","¿Y encontraste los órganos?"],
+    ["Giorgia","Vaya que si lo hice... también encontré un ",{".type":"CENSOR",".text":"cadáver"}," y no tenía idea de lo que estuviera pasando."],
+    ["Giorgia","Cerré todo y al día siguiente al cerrar noté la presencia de uno de esos hombres trajeados, así que no entré en la habitación. Al día siguiente la gran mayoría de objetos habían desaparecido junto al ",{".type":"CENSOR",".text":"cadáver"},"."],
+    ["Giorgia","Pero era tarde, los hombres del traje, que ya sospechaban de mí, me pillaron con las manos en la masa... Menudos ",{".type":"CENSOR",".text":"hijos de puta"},"."],
+    ["Fred","¿Y...?"],
+    ["Giorgia","Me dijeron que si hablaba del tema, eso iría a por mí."],
+    [{".type":"GET",".get":"default.player.name"},"¿Eso? ¿Una criatura?"],
+    ["Giorgia","Lo siento, pero no puedo responder, salid de mi casa y no volvais. Por favor, si realmente me quereis viva, alejaos."],
+    [{".type":"GET",".get":"default.player.name"},"¿Viste mercurio en alguno de los frascos?"],
+    ["Giorgia","Por favor, abandonad la vivienda, ¡no quiero morir!"],
+    ["Fred","Si eso es lo que quieres... Vale."],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/waitershouse.jpg"
+    },
+    [{".type":"GET",".get":"default.player.name"},"¿Eso? ¿Una criatura?"],
+    ["Fred","Tenías razón: es una secta."],
+    ["Fred","Vamos con Jessie"],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/waitershouse.jpg"
+    },
+    ["Jessie","¡Rápido, han llegado los resultados!"],
+    ["Fred","¿Y bien?"],
+    ["Jessie","Tom tenía razón, no ha tocado la sangre mientras vivía, han vertido el mercurio tras matarlo."]
 ]
