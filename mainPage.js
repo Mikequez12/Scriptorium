@@ -65,6 +65,9 @@ async function findGame(event) {
 <div><b>Censor: </b><input id="censor" type="checkbox" /></div>
 <button onclick="if (document.querySelector('#name').value.replaceAll(' ','').length == 0) {alert('Please, choose a valid name')} else {startGame()}">Start</button>
 <img src='${game.url}/icon.ico' />
+
+
+
 <button type='close' onclick="deleteParent(event)"></button>`;
 
     toplevel.querySelector('h1').textContent = gameFiles.data.title;

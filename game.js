@@ -45,7 +45,7 @@ function setGameVarSet(path,value) {
 function readScript() {
     let line = new Line(game.script[game.line]);
 
-    console.info('LINE:',line);
+    console.info(line);
 
     if (line.type === undefined) {
         console.error(`UNKNOWN TYPE\n${line.value}`)
@@ -54,7 +54,6 @@ function readScript() {
             document.querySelector('img#bg').style.filter = `brightness(0)`;
             setTimeout(() => {
                 document.querySelector('img#bg').src = `${game.url}/${line.value.background}`;
-                console.log(game.url,line.value.background);
                 document.querySelector('img#bg').style.filter = `brightness(1)`;
             },500)
         };
@@ -76,15 +75,14 @@ function readScript() {
         game.line++;
         readScript()
     } else if (line.type === 'CONDITION') {
-        getKey = function() {
-            line = new Line(game.script[game.line]);
+        key = function() {
             if (line.value['.condition']['.type'] === 'OPERATION') {
                 if (line.value['.condition']['.equal']) {
                     result = get(line.value['.condition']['.value']);
                     if (result == line.value['.condition']['.equal']) {
                         return '.true';
                     } else {
-                        return '.false';
+                        console.log('.false')
                     }
                 } else if (line.value['.condition']['has']) {
                     return getJSON(game.varSet,line.value['.condition']['value'].split('.')).includes(line.value['.condition']['has'])?'.true':'.false';
@@ -93,9 +91,8 @@ function readScript() {
                     console.info(line.value);
                 }
             }
-        };
-        key = getKey();
-        console.info('KEY:')
+        }
+        key = key();
         console.info(key);
         
         console.log(line.value);
@@ -212,6 +209,8 @@ async function startGame() {
 
     game.line = 0;
     game.script = await getFile(`${game.url}/lang/${gameFiles.data.langs[game.lang]}.json`,(response) => response.json());
+
+
     console.log(game.script);
 
 

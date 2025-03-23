@@ -81,6 +81,47 @@ function insertScript(lines,parent,r=0) {
                     insertScript(v,nul,r+1);
                 };
             }
+        } else if (line['.type'] == 'COMMAND') {
+            l = parent.appendChild(document.createElement('li'));
+            l.appendChild(document.createElement('b'));
+            l.querySelector('b').textContent = 'COMMAND';
+            ul = parent.appendChild(document.createElement('ul'));
+            for (let [k, v] of Object.entries(line)) {
+                if (k != '.type') {
+                    li = ul.appendChild(document.createElement('li'));
+                    li.innerHTML = `<span><b></b></span> <span id="value"></span>`;
+                    li.querySelector('span>b').textContent = k;
+                    li.querySelector('span#value').textContent = v;
+                }
+            }
+        } else if (line['.type'] == 'CONDITION') {
+            l = parent.appendChild(document.createElement('li'));
+            l.appendChild(document.createElement('b'));
+            l.querySelector('b').textContent = 'CONDITION';
+            ul = parent.appendChild(document.createElement('ul'));
+            for (let [k, v] of Object.entries(line)) {
+                if (['.condition','.true','.false'].includes(k)) {
+                    li = ul.appendChild(document.createElement('li'));
+                    li.innerHTML = `<span><b></b></span><ul></ul>`;
+                    li.querySelector('span>b').textContent = k;
+                    console.log('v: ',v);
+                    insertScript(k=='.condition'?[v]:v,li.querySelector('ul'),r+1);
+                }
+            }
+        } else if (line['.type'] == 'OPERATION') {
+            l = parent.appendChild(document.createElement('li'));
+            l.appendChild(document.createElement('b'));
+            l.querySelector('b').textContent = 'OPERATION';
+            ul = parent.appendChild(document.createElement('ul'));
+            console.log(line);
+            for (let [k, v] of Object.entries(line)) {
+                if (k != '.type') {
+                    li = ul.appendChild(document.createElement('li'));
+                    li.innerHTML = `<span><b></b></span>`;
+                    li.querySelector('span>b').textContent = k;
+                    li.querySelector
+                }
+            }
         } else {
             errorSpan = parent.appendChild(document.createElement('span'));
             errorSpan.style.color = 'red';
