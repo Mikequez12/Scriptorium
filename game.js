@@ -203,6 +203,9 @@ document.addEventListener('keydown',(event) => {
 
 async function startGame() {
     game.lang = document.querySelector('select#lang').value;
+
+    document.head.appendChild(document.createElement('title')).textContent = gameFiles.data.title;
+
     game.player = {};
     game.player.sex = document.querySelector('select#sex').value;
     game.player.name = document.querySelector('input#name').value;
