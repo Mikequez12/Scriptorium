@@ -205,7 +205,7 @@ async function startGame() {
     game.lang = document.querySelector('select#lang').value;
 
     document.querySelector('title').textContent = `${game.name} - Scriptorium`;
-    document.querySelector('link[rel="image/icon"]').href = `${game.url}/icon.ico`;
+    document.querySelector('link[rel="icon"]').href = `${game.url}/icon.ico`;
 
     game.player = {};
     game.player.sex = document.querySelector('select#sex').value;
