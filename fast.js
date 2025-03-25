@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded',(DOMEvent) => {
         document.querySelector('#name').value = 'Mike';
         document.querySelector('#censor').checked = false;
         startGame();
-    }, 100);
+    }, 500);
 });
