@@ -36,8 +36,6 @@ async function findGame(event) {
 
     game.url = `${parentCall.querySelector('input').value}`;
 
-    game.name = gameFiles.data.title;
-
     gameFiles = await fetch(game.url)
         .then(async function(response) {
             if (!response.ok) {
@@ -47,6 +45,8 @@ async function findGame(event) {
                 return {value:true,data:await getData(game.url)}; // Puede continuar
             }
         });
+        
+    game.name = gameFiles.data.title;
     
     console.log(gameFiles);
     if (!gameFiles.value) {
