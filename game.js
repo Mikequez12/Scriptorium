@@ -52,10 +52,12 @@ function readScript() {
     } else if (line.type === 'COMMAND') { // Sintaxis de los comandos
         if (line.value.background) {
             document.querySelector('img#bg').style.filter = `brightness(0)`;
-            setTimeout(() => {
-                document.querySelector('img#bg').src = `${game.url}/${line.value.background}`;
-                document.querySelector('img#bg').style.filter = `brightness(1)`;
-            },500)
+            document.querySelector('img#bg').src = `${game.url}/${line.value.background}`;
+            document.querySelector('img#bg').addEventListener('load',() => {
+                setTimeout(() => {
+                    document.querySelector('img#bg').style.filter = `brightness(1)`;
+                },500)
+            });
         };
         if (line.value.set) {
             setGameVarSet(line.value.set[0].split('.'),line.value.set[1])
