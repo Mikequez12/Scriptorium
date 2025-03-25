@@ -97,7 +97,7 @@ body {
     color: white;
     font-family: var(--font);
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     padding-left: 10px;
     min-height: 215px;

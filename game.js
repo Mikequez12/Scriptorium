@@ -54,8 +54,10 @@ function readScript() {
             document.querySelector('img#bg').style.filter = `brightness(0)`;
             setTimeout(() => {
                 document.querySelector('img#bg').src = `${game.url}/${line.value.background}`;
-                document.querySelector('img#bg').style.filter = `brightness(1)`;
-            },500)
+                document.querySelector('img#bg').addEventListener('load',() => {
+                    document.querySelector('img#bg').style.filter = `brightness(1)`;
+                });
+            },500);
         };
         if (line.value.set) {
             setGameVarSet(line.value.set[0].split('.'),line.value.set[1])
@@ -197,8 +199,14 @@ document.addEventListener('keydown',(event) => {
     }
 })
 
+var game = {};
+
 async function startGame() {
     game.lang = document.querySelector('select#lang').value;
+
+    document.querySelector('title').textContent = `${game.name} - Scriptorium`;
+    document.querySelector('link[rel="icon"]').href = `${game.url}/icon.ico`;
+
     game.player = {};
     game.player.sex = document.querySelector('select#sex').value;
     game.player.name = document.querySelector('input#name').value;
@@ -209,6 +217,8 @@ async function startGame() {
 
     game.line = 0;
     game.script = await getFile(`${game.url}/lang/${gameFiles.data.langs[game.lang]}.json`,(response) => response.json());
+
+
     console.log(game.script);
 
 
