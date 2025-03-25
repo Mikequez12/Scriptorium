@@ -1,5 +1,3 @@
-var game = {};
-
 document.addEventListener('DOMContentLoaded',function() {
     homePage();
 });

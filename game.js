@@ -201,6 +201,8 @@ document.addEventListener('keydown',(event) => {
     }
 })
 
+var game = {};
+
 async function startGame() {
     game.lang = document.querySelector('select#lang').value;
 
