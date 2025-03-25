@@ -59,7 +59,7 @@ function readScript() {
                         document.querySelector('img#bg').style.filter = `brightness(1)`;
                     },500)
                 });
-            });
+            },500);
         };
         if (line.value.set) {
             setGameVarSet(line.value.set[0].split('.'),line.value.set[1])
