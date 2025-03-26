@@ -1,0 +1,38 @@
+[
+    {
+        ".type":"COMMAND",
+        "font":"fonts/HinaMincho-Regular.ttf",
+        "background":"backgrounds/dark.jpg"
+    },
+    [{".type":"GET",".get":"default.player.name"},"Recuerdo la sensación: el sonido irreconocible e inusual, pero sobre todo: la sensación de la niebla densa que me cubría, el deseo de dejar de estar sólo."],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/house.jpg"
+    },
+    ["","El teléfono sonó y ",{".type":"GET",".get":"default.player.name"}," corrió a atenderlo."],
+    [{".type":"GET",".get":"default.player.name"},"¿Sí?"],
+    ["Morgan","Hola, mi nombre es Morgan, trabajo en la policía. Hablo con ",{".type":"GET",".get":"default.player.name"},"?"],
+    [{".type":"GET",".get":"default.player.name"},"Sí, diga. ¿Qué ocurre?"],
+    ["Morgan","Generalmente no solemos hacer esto, pero necesitamos su ayuda."],
+    [{".type":"GET",".get":"default.player.name"},"Vaya... Me temo que no trabajo para la policía. En caso de que quisiera hacerlo, les hubiera llamado yo."],
+    ["Morgan","Escuche, es algo fuerte."],
+    [{".type":"GET",".get":"default.player.name"},"Claro, un apuñalamiento es razón más que suficiente para llamar a un detective privado..."],
+    ["Morgan","Por favor; nunca antes hemos visto algo así, y creemos que podrías ayudarnos. Te pagaremos una hora aceptes o no, y si al final decides aceptar, te daremos detalles."],
+    [{".type":"GET",".get":"default.player.name"},"Está bien, envíe la dirección y estaré ahí lo antes posible."],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/street.jpg"
+    },
+    ["Fred","Debes de ser ",{".type":"GET",".get":"default.player.name"},", ¿cierto?"],
+    [{".type":"GET",".get":"default.player.name"},"Así, es."],
+    ["Fred","He oído hablar mucho de tí, la verdad es que tienes el respeto ganado entre nosotros."],
+    [{".type":"GET",".get":"default.player.name"},"Te lo agradezco, pero compro por horas y..."],
+    ["Fred","Claro, entiendo. Deja que te presente a nuestra compañera. ¿Jessie?"],
+    ["Jessie","Entonces, me mueves la cita a las 14:00, entenido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."],
+    ["Fred","¿Jess?"],
+    ["Jessie","Oh disculpa. Fred, cariño, no me interrumpas mientras trabajo. Bien, tengo una conferencia en una hora y media. Ya sé que no voy a yegar, precisamente por eso digo que la muevas."],
+    ["Fred",{".type":"GET",".get":"default.player.name"}," ha llegado."],
+    ["Jessie","Te llamo en diez minutos. DIEZ MINUTOS."],
+    ["Fred","..."],
+    ["Jessie","¡Hola, ",{".type":"GET",".get":"default.player.name"},"! Estoy muy contenta de que vayas a trabajar con nosotros, es todo un placer."]
+]

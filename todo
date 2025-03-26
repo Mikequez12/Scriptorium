@@ -1,0 +1,44 @@
+# MAIN
+- startGame() // In game.js [ARREGLADO]
+- CSS [ARREGLADO]
+    - Backdrop-filter no funciona [ARREGLADO]
+- Añadir censorship() [HECHO]
+- Agregar el título del sujeto [HECHO]
+- Crear la interfaz de CHOOSE [HECHO]
+- Añadir los bloques especiales de tipo condición [HECHO]
+- Añadir icono al botón de "siguiente" [HECHO]
+- Buscar una fuente apropiada [HECHO]
+
+
+- Añadir Markdown viewer para el README.md
+    - Código de ejemplo:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+</head>
+<body>
+    <div id="markdown-content">
+        # Hello World  
+        This is **bold text** and *italic text*.  
+        - Item 1  
+        - Item 2  
+    </div>
+
+    <script>
+        const converter = new showdown.Converter();
+        const markdownDiv = document.getElementById("markdown-content");
+        markdownDiv.innerHTML = converter.makeHtml(markdownDiv.textContent);
+    </script>
+</body>
+</html>
+
+- Buscar artista
+- Seguir con la historia
+    - Corregir la historia
+
+# POSTERIOR
+- Dev del editor visual
