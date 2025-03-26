@@ -1,0 +1,292 @@
+<<<<<<< HEAD
+:root {
+    --font: Arial, Helvetica, sans-serif;
+}
+
+div#boxes {
+    background: linear-gradient(transparent, #000d 50px, #000e, #000);
+    position: absolute;
+    min-height: 250px;
+    bottom: 0;
+    height: 25vh;
+    width: 100%;
+}
+
+button#next {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    font-family: var(--font);
+
+    background: url('icons/caret.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+
+    width: 50px;
+    height: 50px;
+    transition: opacity .3s cubic-bezier(1,0,1,1);
+
+    animation: caret 1.5s infinite forwards ease-in-out;
+
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+button#next.ready {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@keyframes caret {
+    0% {
+        rotate: 180deg;
+        translate: 0 0;
+    }
+    50% {
+        rotate: 240deg;
+        translate: 0 -15px;
+    }
+    100% {
+        rotate: 300deg;
+        translate: 0 0;
+    }
+}
+
+#dialog-box {
+    min-height: 200px;
+    height: calc(25vh - 50px);
+    position: absolute;
+    background: transparent;
+    outline: none;
+    font-family: var(--font);
+    color: white;
+    border: none;
+    padding: 0 15px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    resize: none;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+img#bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border: none;
+    outline: none;
+    background: black;
+    transition: filter .5s;
+}
+
+body {
+    background: black;
+}
+
+#name-label {
+    width: calc(100% - 10px);
+    font-size: 55px;
+    background: none;
+    color: white;
+    font-family: var(--font);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    padding-left: 10px;
+    min-height: 215px;
+    height: calc(25vh - 35px);
+}
+
+button.CHOICE {
+    padding: 10px;
+    margin: auto 0 10px;
+    overflow: hidden !important;
+    width: 0%;
+    border: solid 1px white;
+    border-radius: 5px;
+    background: linear-gradient(to bottom,#0003,#000c);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: 1s;
+    display: block;
+    position: relative;
+    box-shadow: inset 0 0 0 0 white;
+}
+
+button.CHOICE:hover {
+    border-color: rgb(233, 182, 71);
+    background-color: rgba(233, 182, 71, 0.4);
+    text-shadow: 0 2px 15px black;
+    letter-spacing: 3px;
+}
+
+div.choices {
+    height: 75vh;
+    max-height: calc(100% - 250px);
+    padding: 25px;
+    justify-items: center;
+    text-align: center;
+}
+
+button.CHOICE:not(.can-continue) {
+    opacity: 0;
+}
+
+button.CHOICE.can-continue {
+    width: 80%;
+    opacity: 1;
+=======
+:root {
+    --font: Arial, Helvetica, sans-serif;
+}
+
+div#boxes {
+    background: linear-gradient(transparent, #000d 50px, #000e, #000);
+    position: absolute;
+    min-height: 250px;
+    bottom: 0;
+    height: 25vh;
+    width: 100%;
+}
+
+button#next {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    font-family: var(--font);
+
+    background: url('icons/caret.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+
+    width: 50px;
+    height: 50px;
+    transition: opacity .3s cubic-bezier(1,0,1,1);
+
+    animation: caret 1.5s infinite forwards ease-in-out;
+
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+button#next.ready {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@keyframes caret {
+    0% {
+        rotate: 180deg;
+        translate: 0 0;
+    }
+    50% {
+        rotate: 240deg;
+        translate: 0 -15px;
+    }
+    100% {
+        rotate: 300deg;
+        translate: 0 0;
+    }
+}
+
+#dialog-box {
+    min-height: 200px;
+    height: calc(25vh - 50px);
+    position: absolute;
+    background: transparent;
+    outline: none;
+    font-family: var(--font);
+    color: white;
+    border: none;
+    padding: 0 15px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    resize: none;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+img#bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border: none;
+    outline: none;
+    background: black;
+    transition: filter .5s;
+}
+
+body {
+    background: black;
+}
+
+#name-label {
+    width: calc(100% - 10px);
+    font-size: 55px;
+    background: none;
+    color: white;
+    font-family: var(--font);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    min-height: 215px;
+    height: calc(25vh - 35px);
+}
+
+button.CHOICE {
+    padding: 10px;
+    margin: auto 0 10px;
+    overflow: hidden !important;
+    width: 0%;
+    border: solid 1px white;
+    border-radius: 5px;
+    background: linear-gradient(to bottom,#0003,#000c);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: 1s;
+    display: block;
+    position: relative;
+    box-shadow: inset 0 0 0 0 white;
+}
+
+button.CHOICE:hover {
+    border-color: rgb(233, 182, 71);
+    background-color: rgba(233, 182, 71, 0.4);
+    text-shadow: 0 2px 15px black;
+    letter-spacing: 3px;
+}
+
+div.choices {
+    height: 75vh;
+    max-height: calc(100% - 250px);
+    padding: 25px;
+    justify-items: center;
+    text-align: center;
+}
+
+button.CHOICE:not(.can-continue) {
+    opacity: 0;
+}
+
+button.CHOICE.can-continue {
+    width: 80%;
+    opacity: 1;
+>>>>>>> aed125db1f4afa5ce004d40bd68feabb68a684a5
+}
