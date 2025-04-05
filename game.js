@@ -236,5 +236,9 @@ async function startGame() {
 
     
     readScript();
+<<<<<<< HEAD
 }
 var timeouts = [];
+=======
+}
+>>>>>>> cb2e832066ccc37b1d4ef50e2c86d638841c912c
