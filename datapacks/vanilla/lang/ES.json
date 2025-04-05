@@ -28,7 +28,7 @@
     ["Fred","He oído hablar mucho de tí, la verdad es que tienes el respeto ganado entre nosotros."],
     [{".type":"GET",".get":"default.player.name"},"Te lo agradezco, pero compro por horas y..."],
     ["Fred","Claro, entiendo. Deja que te presente a nuestra compañera. ¿Jessie?"],
-    ["Jessie","Entonces, me mueves la cita a las 14:00, entenido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."],
+    ["Jessie","Entonces, me mueves la cita a las 14:00, entendido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."],
     ["Fred","¿Jess?"],
     ["Jessie","Oh disculpa. Fred, cariño, no me interrumpas mientras trabajo. Bien, tengo una conferencia en una hora y media. Ya sé que no voy a yegar, precisamente por eso digo que la muevas."],
     ["Fred",{".type":"GET",".get":"default.player.name"}," ha llegado."],
