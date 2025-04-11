@@ -9,6 +9,35 @@
         ".type":"COMMAND",
         "background":"backgrounds/house.jpg"
     },
+    {
+        ".type":"CONDITION",
+        ".condition":{
+            ".type":"OPERATION",
+            ".value":{
+                ".type":"GET",
+                ".get":"default.player.gender"
+            },
+            ".equal":"Male"
+        },
+        ".true":[
+            {
+                ".type":"COMMAND",
+                ".set":["el_ella","él"]
+            },{
+                ".type":"COMMAND",
+                ".set":["o_a","o"]
+            }
+        ],
+        ".false":[
+            {
+                ".type":"COMMAND",
+                ".set":["el_ella","ella"]
+            },{
+                ".type":"COMMAND",
+                ".set":["o_a","a"]
+            }
+        ]
+    },
     ["","El teléfono sonó y ",{".type":"GET",".get":"default.player.name"}," lo atendió con la misma emoción que un lunes por la mañana."],
     [{".type":"GET",".get":"default.player.name"},"¿Sí?"],
     ["Morgan","Hola, mi nombre es Morgan, trabajo en la policía. Hablo con ",{".type":"GET",".get":"default.player.name"},"?"],
@@ -28,11 +57,30 @@
     ["Fred","He oído hablar mucho de tí, la verdad es que tienes el respeto ganado entre nosotros."],
     [{".type":"GET",".get":"default.player.name"},"Te lo agradezco. Siempre es bueno saber que el boca a boca sigue funcionando en la era digital."],
     ["Fred","Claro, entiendo. Deja que te presente a nuestra compañera. ¿Jessie?"],
-    ["Jessie","Entonces, me mueves la cita a las 14:00, entendido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."],
+    ["Jessie","¿Entonces, me mueves la cita a las 14:00, entendido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."],
     ["Fred","¿Jess?"],
-    ["Jessie","Oh disculpa. Fred, cariño, no me interrumpas mientras trabajo. Bien, tengo una conferencia en una hora y media. Ya sé que no voy a yegar, precisamente por eso digo que la muevas."],
+    ["Jessie","Discúlpame un segundo. Fred, cariño, no me interrumpas mientras trabajo. Bien, tengo una conferencia en una hora y media. Ya sé que no voy a llegar, precisamente por eso digo que la muevas."],
     ["Fred",{".type":"GET",".get":"default.player.name"}," ha llegado."],
     ["Jessie","Te llamo en diez minutos. DIEZ MINUTOS."],
     ["Fred","..."],
-    ["Jessie","¡Hola, ",{".type":"GET",".get":"default.player.name"},"! Estoy muy contenta de que vayas a trabajar con nosotros, es todo un placer."]
+    ["Jessie","¡Hola, ",{".type":"GET",".get":"default.player.name"},"! Estoy muy contenta de que vayas a trabajar con nosotros, es todo un placer."],
+    [{".type":"GET",".get":"default.player.name"},"Gracias..."],
+    ["Fred","... Bueno, creo que es un buen momento para ponerte al día y explicarte el... asunto con calma."],
+    [{".type":"GET",".get":"default.player.name"},"(¿Asunto? Esto no es un mail ni una serie de televisión)."],
+    ["Fred","Bien, vamos al lío, hasta luego Jess."],
+    ["Jessie","Hasta luego; por favor, no me llaméis."],
+    ["Fred","Bien, ¿estás listo para la historia?"],
+    ["Fred","No te preocupes, vamos a ponerte al día."],
+    [{".type":"GET",".get":"default.player.name"},"¡Supongo que sí, espero que sea tan emocionante como el último trabajo de oficina que tuve!"],
+    ["Fred","(Esto va a ser difícil...)"],
+    ["Fred","Sí, es algo así... pero Jessie hace el papeleo."],
+    [{".type":"GET",".get":"default.player.name"},"Eso suena como una oferta irrefutable. ¿Cuánto tiempo hasta que me envíen una placa?"],
+    ["Fred","(En el fondo me gusta que sea así)"],
+    [{".type":"GET",".get":"default.player.name"},"¿No me digas que el alcalde me dará una de esas tijeras enormes para cortar una cinta estúpida como agradecimiento de ser un incompetente?"],
+    ["Fred","Empezemos de una vez."],
+    ["Fred","Hoy, en la madrugada, ha aparecido un ",{".type":"CENSORSHIP",".text":"cadáver"},". Estaba hundido completamente en el contenedor. Una trabajadora del local lo encontrço mientras tiraba la basura."],
+    [{".type":"GET",".get":"default.player.name"},"¿A qué hora cierra el local?"],
+    ["Fred","A las 3:00, ¿puedo saber por qué lo preguntas?"],
+    [{".type":"GET",".get":"default.player.name"},"Solo quería saber qué hora es buena para arrastrar tus pesadillas aquí y aliviarlas."],
+    ["Fred","(En realidad ",{".type":"GET",".get":"el_ella"}," da algo de miedo, pero es muy divertid",{".type":"GET",".get":"o_a"},")"]
 ]
