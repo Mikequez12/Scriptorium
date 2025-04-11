@@ -22,19 +22,21 @@
         ".true":[
             {
                 ".type":"COMMAND",
-                ".set":["el_ella","él"]
-            },{
+                "set":["el_ella","él"]
+            },
+            {
                 ".type":"COMMAND",
-                ".set":["o_a","o"]
+                "set":["o_a","o"]
             }
         ],
         ".false":[
             {
                 ".type":"COMMAND",
-                ".set":["el_ella","ella"]
-            },{
+                "set":["el_ella","ella"]
+            },
+            {
                 ".type":"COMMAND",
-                ".set":["o_a","a"]
+                "set":["o_a","a"]
             }
         ]
     },
@@ -78,7 +80,7 @@
     ["Fred","(En el fondo me gusta que sea así)"],
     [{".type":"GET",".get":"default.player.name"},"¿No me digas que el alcalde me dará una de esas tijeras enormes para cortar una cinta estúpida como agradecimiento de ser un incompetente?"],
     ["Fred","Empezemos de una vez."],
-    ["Fred","Hoy, en la madrugada, ha aparecido un ",{".type":"CENSORSHIP",".text":"cadáver"},". Estaba hundido completamente en el contenedor. Una trabajadora del local lo encontrço mientras tiraba la basura."],
+    ["Fred","Hoy, en la madrugada, ha aparecido un ",{".type":"CENSOR",".text":"cadáver"},". Estaba hundido completamente en el contenedor. Una trabajadora del local lo encontró mientras tiraba la basura."],
     [{".type":"GET",".get":"default.player.name"},"¿A qué hora cierra el local?"],
     ["Fred","A las 3:00, ¿puedo saber por qué lo preguntas?"],
     [{".type":"GET",".get":"default.player.name"},"Solo quería saber qué hora es buena para arrastrar tus pesadillas aquí y aliviarlas."],
