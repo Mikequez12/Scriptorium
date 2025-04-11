@@ -80,9 +80,45 @@
     ["Fred","(En el fondo me gusta que sea así)"],
     [{".type":"GET",".get":"default.player.name"},"¿No me digas que el alcalde me dará una de esas tijeras enormes para cortar una cinta estúpida como agradecimiento de ser un incompetente?"],
     ["Fred","Empezemos de una vez."],
-    ["Fred","Hoy, en la madrugada, ha aparecido un ",{".type":"CENSOR",".text":"cadáver"},". Estaba hundido completamente en el contenedor. Una trabajadora del local lo encontró mientras tiraba la basura."],
-    [{".type":"GET",".get":"default.player.name"},"¿A qué hora cierra el local?"],
-    ["Fred","A las 3:00, ¿puedo saber por qué lo preguntas?"],
-    [{".type":"GET",".get":"default.player.name"},"Solo quería saber qué hora es buena para arrastrar tus pesadillas aquí y aliviarlas."],
-    ["Fred","(En realidad ",{".type":"GET",".get":"el_ella"}," da algo de miedo, pero es muy divertid",{".type":"GET",".get":"o_a"},")"]
+    ["Fred","Hoy, en la madrugada, ha aparecido un ",{".type":"CENSOR",".text":"cadáver"},". Estaba hundido completamente en el contenedor. Una trabajadora del local lo encontró mientras tiraba la basura. Desde luego, no es una buena noticia para comenzar el día."],
+    [{".type":"GET",".get":"default.player.name"},"¿A qué hora cierra el local? No quiero interrumpir sus cultos sin querer."],
+    ["Fred","A las 3:00, y no vas a interrumpir nada: El ",{".type":"CENSOR",".text":"cadáver"}," no tenía ningún organo."],
+    [{".type":"GET",".get":"default.player.name"},"El episodio de hoy se pone interesante..."],
+    ["Fred","En realidad quieren creer que es una simple venta ilegal de órganos con ",{".type":"CENSOR",".text":"asesinato"}," incluido."]
+    ["Fred","(En realidad ",{".type":"GET",".get":"el_ella"}," da algo de miedo, pero es muy divertid",{".type":"GET",".get":"o_a"},")"],
+    [{".type":"GET",".get":"default.player.name"},"¿Está abierto durante mucho tiempo? Me pregunto si el show aquí es prolongado."],
+    ["Fred","La verdad es que no mucho, abre a las 22:00..."],
+    [{".type":"GET",".get":"default.player.name"},"¿Es un lugar inclusivo? Digo, ¿hace falta un yate, un Rolex o una membresía en el club de los vampiros ricos y pálidos para entrar?"],
+    ["Fred","Realmente cualquiera puede entrar, no hay que hacerse un máster o pasar un casting."],
+    [{".type":"GET",".get":"default.player.name"},"¿Y qué pasa con los dueños? ¿No se dignan a pisar su propio circo? ¿O están demasiado ocupados contando billetes en una isla privada?"],
+    ["Fred","Ellos... tienen mucho dinero y simplemente lo invierten y gastan, a veces parece que el universo es el que les paga todo; nunca les falta dinero."],
+    [{".type":"GET",".get":"default.player.name"},"¿Y de dónde sacaron la montaña de oro para montar este espectáculo?"],
+    ["Fred","No, nunca ha estado claro; creen que ganaron alguna apuesta, pero solo se sabe que apareció de un día para otro."],
+    [{".type":"GET",".get":"default.player.name"},"Vaya, para bancar este antro debieron ganar el premio gordo... o robarle la cartera a Midas. De todos modos, es \"inspirador\"."],
+    ["Fred","(No sé si ",{".type":"GET",".get":"el_ella"}," es así o si lo hace para que confíe)"],
+    {
+        ".type":"CHOOSE",
+        "Me lo voy a pasar muy bien con este caso...":[
+            [{".type":"GET",".get":"default.player.name"},"Me lo voy a pasar muy bien con este caso..."],
+            ["Fred","(No puedo decir que confíe en él)"]
+        ],
+        "Me alegro de estar aquí":[
+            [{".type":"GET",".get":"default.player.name"},"Me alegro de estar aquí."],
+            ["Fred","Puede que de momento, y solo de momento, ",{".type":"GET",".get":"el_ella"}," sea alguien en quien pueda confiar."],
+            {
+                ".type":"COMMAND",
+                "addkey":"FredI"
+            }
+        ],
+        "¿Por qué estás tan callado; Fred?":[
+            [{".type":"GET",".get":"default.player.name"},"¿Por qué estás tan callado; Fred? ¿Acaso estás pensando en algo?"],
+            ["Fred","No, solo estaba observando la escena."],
+            [{".type":"GET",".get":"default.player.name"},"(Él es algo raro)"],
+            ["Fred","(Definitivamente no puedo confiar en ",{".type":"GET",".get":"el_ella"},")"],
+            {
+                ".type":"COMMAND",
+                "addkey":"NoFredI"
+            }
+        ]
+    }
 ]
