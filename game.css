@@ -109,6 +109,7 @@ button.CHOICE {
     padding: 10px;
     margin: auto 0 10px;
     overflow: hidden !important;
+    white-space: nowrap;
     width: 0%;
     border: solid 1px white;
     border-radius: 5px;
