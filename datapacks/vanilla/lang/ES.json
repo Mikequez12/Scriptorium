@@ -84,7 +84,7 @@
     [{".type":"GET",".get":"default.player.name"},"¿A qué hora cierra el local? No quiero interrumpir sus cultos sin querer."],
     ["Fred","A las 3:00, y no vas a interrumpir nada: El ",{".type":"CENSOR",".text":"cadáver"}," no tenía ningún organo."],
     [{".type":"GET",".get":"default.player.name"},"El episodio de hoy se pone interesante..."],
-    ["Fred","En realidad quieren creer que es una simple venta ilegal de órganos con ",{".type":"CENSOR",".text":"asesinato"}," incluido."]
+    ["Fred","En realidad quieren creer que es una simple venta ilegal de órganos con ",{".type":"CENSOR",".text":"asesinato"}," incluido."],
     ["Fred","(En realidad ",{".type":"GET",".get":"el_ella"}," da algo de miedo, pero es muy divertid",{".type":"GET",".get":"o_a"},")"],
     [{".type":"GET",".get":"default.player.name"},"¿Está abierto durante mucho tiempo? Me pregunto si el show aquí es prolongado."],
     ["Fred","La verdad es que no mucho, abre a las 22:00..."],
