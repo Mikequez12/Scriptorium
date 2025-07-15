@@ -1,147 +1,234 @@
-:root {
-    --font: Arial, Helvetica, sans-serif;
-}
-
-div#boxes {
-    background: linear-gradient(transparent, #000d 50px, #000e, #000);
+div#text {
+    font-family: var(--font);
+    font-size: var(--font-size);
     position: absolute;
-    min-height: 250px;
+    left: 0;
+    right: 0;
     bottom: 0;
-    height: 25vh;
-    width: 100%;
-}
-
-button#next {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-
-    font-family: var(--font);
-
-    background: url('icons/caret.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-
-    width: 50px;
-    height: 50px;
-    transition: opacity .3s cubic-bezier(1,0,1,1);
-
-    animation: caret 1.5s infinite forwards ease-in-out;
-
-    opacity: 0;
-    pointer-events: none;
-    cursor: pointer;
-}
-
-button#next.ready {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-@keyframes caret {
-    0% {
-        rotate: 180deg;
-        translate: 0 0;
-    }
-    50% {
-        rotate: 240deg;
-        translate: 0 -15px;
-    }
-    100% {
-        rotate: 300deg;
-        translate: 0 0;
-    }
-}
-
-#dialog-box {
-    min-height: 200px;
-    height: calc(25vh - 50px);
-    position: absolute;
-    background: transparent;
-    outline: none;
-    font-family: var(--font);
+    padding: 15px;
+    background:
+        radial-gradient(
+            ellipse at top,
+rgba(0, 0, 0, 0.33188397788130286), /* 45% */
+rgba(0, 0, 0, 0.5), /* 55% */
+rgba(0, 0, 0, 0.6681160221186971), /* 64% */
+rgba(0, 0, 0, 0.8126044760531954), /* 73% */
+rgba(0, 0, 0, 0.9183398196637926), /* 82% */
+rgba(0, 0, 0, 0.9802774241284169), /* 91% */
+rgba(0, 0, 0, 0.9999999999972715) /* 100% */
+        );
+    height: 25%;
+    width: calc(100vw - 30px);
     color: white;
-    border: none;
-    padding: 0 15px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    resize: none;
-    font-size: 20px;
-    pointer-events: none;
 }
 
-img#bg {
-    position: absolute;
+div#text::after {
     width: 100%;
-    height: 100%;
-    left: 0;
+    height: 2px;
+    left:0;
+    position: absolute;
     top: 0;
-    z-index: -1;
-    border: none;
-    outline: none;
-    background: black;
-    transition: filter .5s;
-    object-fit: cover;
+    background: linear-gradient(to right, #fff6, white 35%, white 65%, #fff6);
+    content: '';
 }
 
 body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/035/329/781/small_2x/ai-generated-beautiful-nature-background-in-a-park-with-grass-free-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    --font: sans-serif;
+    --alpha: 1;
+}
+
+body::after {
+    transition: opacity .5s;
+    opacity: var(--alpha);
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     background: black;
 }
 
-#name-label {
-    width: calc(100% - 10px);
-    font-size: 55px;
-    background: none;
-    color: white;
-    font-family: var(--font);
+.hide {
+    display: none !important;
+}
+
+div#title {
     position: absolute;
-    bottom: -10px;
     left: 0;
-    padding-left: 10px;
-    min-height: 215px;
-    height: calc(25vh - 35px);
+    bottom: calc(100% - 70px);
+    width: 100%;
+
+    display: flex;
 }
 
-button.CHOICE {
-    padding: 10px;
-    margin: auto 0 10px;
-    overflow: hidden !important;
-    white-space: nowrap;
-    width: 0%;
-    border: solid 1px white;
-    border-radius: 5px;
-    background: linear-gradient(to bottom,#0003,#000c);
-    backdrop-filter: blur(5px);
-    color: white;
-    transition: 1s;
-    display: block;
+div#title div {
     position: relative;
-    box-shadow: inset 0 0 0 0 white;
-}
+    
+    margin: auto;
+    
+    align-content: flex-end;
 
-button.CHOICE:hover {
-    border-color: rgb(233, 182, 71);
-    background-color: rgba(233, 182, 71, 0.4);
-    text-shadow: 0 2px 15px black;
-    letter-spacing: 3px;
-}
+    display: flex;
+    flex-direction: column;
 
-div.choices {
-    height: 75vh;
-    max-height: calc(100% - 250px);
-    padding: 25px;
-    justify-items: center;
-    text-align: center;
-}
-
-button.CHOICE:not(.can-continue) {
     opacity: 0;
 }
 
-button.CHOICE.can-continue {
-    width: 80%;
+div#title h1, h2 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+div#title div::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: calc(-35px - var(--dist));
+    bottom: 25%;
+    color: var(--color);
+    background: var(--color);
+    box-shadow: 0 0 15px var(--color);
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+div#title div::after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: calc(-35px - var(--dist));
+    bottom: 25%;
+    color: var(--color);
+    background: var(--color);
+    box-shadow: 0 0 15px var(--color);
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+div#title div:not(.no-animation)::after, div#title div:not(.no-animation)::before {
+    transition: all 1s ease-out !important;
+}
+
+#subject.hide {
+    display: none;
+}
+
+#subject {
+    height: calc(5px + var(--title-font-size));
+    position: absolute;
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    color: white;
+    background:
+        linear-gradient(
+            to left,
+rgba(0, 0, 0, 0), /* 0% */
+rgba(0, 0, 0, 0.08), /* 12% */
+rgba(0, 0, 0, 0.16), /* 33% */
+rgba(0, 0, 0, 0.33188397788130286), /* 45% */
+rgba(0, 0, 0, 0.5), /* 55% */
+rgba(0, 0, 0, 0.6681160221186971), /* 64% */
+rgba(0, 0, 0, 0.8126044760531954), /* 73% */
+rgba(0, 0, 0, 0.9183398196637926), /* 82% */
+rgba(0, 0, 0, 0.9802774241284169), /* 91% */
+rgba(0, 0, 0, 0.9999999999972715) /* 100% */
+        );
+    padding: 10px;
+    left: 0;
+    bottom: calc(25% - 1px);
+    width: 300px;
+}
+
+#next {
+    background-image: url('caret.svg');
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    animation: float infinite 2s ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        bottom: 10px;
+    }
+    50% {
+        rotate: 180deg;
+        bottom: 50px;
+    }
+    100% {
+        bottom: 10px;
+        rotate: 1turn;
+    }
+}
+
+
+div#choices {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    bottom: calc(25% + 120px);
+    width: calc(100% - 10px);
+    left: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+div#choices button {
+    overflow: hidden !important;
+
+    margin: 5px auto;
+    padding: 10px;
+
+    background: rgba(0, 0, 0, 0.7);
+    border: solid 1px white;
+
+    border-radius: 5px;
+    font-size: calc(var(--font-size) / 4 * 3);
+
+    color: white;
+
+    font-family: var(--font);
+
+    transition: 1s ease;
+
+    opacity: 0;
+
+    white-space: nowrap;
+}
+
+div#choices button.ready {
+    width: 70%;
     opacity: 1;
+}
+
+div#choices button:hover.ready {
+    width: 100%;
+    cursor: pointer;
+    background: rgba(164, 167, 34, 0.7) !important;
+}
+
+div#choices button:hover.ready+*, div#choices button.ready:has(+button:hover) {
+    width: 85%;
+    background: rgba(57, 58, 12, 0.7) !important;
+}
+
+html body div#choices button:not(.ready) {
+    width: 10px !important;
 }

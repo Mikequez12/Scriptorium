@@ -1,0 +1,28 @@
+command(
+    font="fonts/HinaMincho-Regular.ttf",
+    background="backgrounds/dark.jpg"
+);
+talk(
+    "","Capítulo I - Todos los asesinatos llevan a Roma"
+);
+talk(
+    player.name,
+    "Recuerdo la sensación: el sonido irreconocible e inusual, pero sobre todo: la sensación de la niebla densa que me cubría, el deseo de dejar de estar solo."
+);
+command(
+    background="backgrounds/house.jpg"
+);
+
+if(
+    player.gender,
+    operations.equal,
+    "male"
+) {
+    set("el_ella","él");
+    set("o_a","o");
+    set("_a","")
+} else {
+    set("el_ella","ella");
+    set("o_a","a");
+    set("_a","a")
+}

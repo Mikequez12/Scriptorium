@@ -1,0 +1,38 @@
+[
+    {
+        ".type":"COMMAND",
+        "font":"fonts/HinaMincho-Regular.ttf",
+        "background":"backgrounds/dark.jpg"
+    },
+    ["characters/men-dark.png",{".type":"GET",".get":"default.player.name"},"Recuerdo la sensación: el sonido irreconocible e inusual, pero sobre todo: la sensación de la niebla densa que me cubría, el deseo de dejar de estar sólo."],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/house.jpg"
+    },
+    ["","","El teléfono sonó y ",{".type":"GET",".get":"default.player.name"}," lo atendió con la misma emoción que un lunes por la mañana."],
+    ["characters/men-serious.png",{".type":"GET",".get":"default.player.name"},"¿Sí?"],
+    ["characters/morgan-formal.png","Morgan","Hola, mi nombre es Morgan, trabajo en la policía. Hablo con ",{".type":"GET",".get":"default.player.name"},"?"],
+    ["characters/men-sarcastic.png",{".type":"GET",".get":"default.player.name"},"Sí, diga. ¿Qué ocurre esta vez?"],
+    ["characters/morgan-formal.png","Morgan","Generalmente no solemos hacer esto, pero necesitamos su ayuda."],
+    ["characters/men-sarcastic.png",{".type":"GET",".get":"default.player.name"},"Interesante táctica de reclutamiento. ¿Me van a enviar una placa por correo o saltamos directo a la parte de la conspiración?"],
+    ["characters/morgan-tired.png","Morgan","Escuche, es algo fuerte, muy serio."],
+    ["characters/men-sarcastic.png",{".type":"GET",".get":"default.player.name"},"Claro. Porque no hay nada más urgente que llamar a un civil cuando tienes un apuñalamiento ritual y cero ideas."],
+    ["characters/morgan-tired.png","Morgan","Por favor; nunca antes hemos visto algo así, y creemos que podrías ayudarnos. Te pagaremos una hora aceptes o no, y si al final decides aceptar, te daremos detalles."],
+    ["characters/men-sarcastic.png",{".type":"GET",".get":"default.player.name"},"Entonces que no se diga que no soy flexible. Mándeme la dirección, prometo no tardar más de lo que tardo en juzgar su falta de protocolo."],
+    {
+        ".type":"COMMAND",
+        "background":"backgrounds/street.jpg"
+    },
+    ["fred.png","Fred","Debes de ser ",{".type":"GET",".get":"default.player.name"},", ¿cierto?"],
+    ["men-sarcastic.png",{".type":"GET",".get":"default.player.name"},"Sí, a menos que haya otro con mis mismos encantos y tendencia a llegar tarde."],
+    ["fred.png","Fred","He oído hablar mucho de tí, la verdad es que tienes el respeto ganado entre nosotros."],
+    ["men-sarcastic.png",{".type":"GET",".get":"default.player.name"},"Te lo agradezco. Siempre es bueno saber que el boca a boca sigue funcionando en la era digital."],
+    ["fred.png","Fred","Claro, entiendo. Deja que te presente a nuestra compañera. ¿Jessie?"],
+    ["jessie-stressed.png","Jessie","Entonces, me mueves la cita a las 14:00, entendido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."],
+    ["Fred","¿Jess?"],
+    ["Jessie","Oh disculpa. Fred, cariño, no me interrumpas mientras trabajo. Bien, tengo una conferencia en una hora y media. Ya sé que no voy a yegar, precisamente por eso digo que la muevas."],
+    ["Fred",{".type":"GET",".get":"default.player.name"}," ha llegado."],
+    ["Jessie","Te llamo en diez minutos. DIEZ MINUTOS."],
+    ["Fred","..."],
+    ["Jessie","¡Hola, ",{".type":"GET",".get":"default.player.name"},"! Estoy muy contenta de que vayas a trabajar con nosotros, es todo un placer."]
+]

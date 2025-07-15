@@ -1,0 +1,143 @@
+body {
+    margin: 5px;
+}
+
+block {
+    display: block;
+    margin: 0;
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--color);
+    box-shadow:
+        inset 0 3px 0 #fff6,
+        inset 0 -3px 0 #0006;
+    position: relative;
+}
+block:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: var(--color);
+    z-index: 1;
+    box-shadow:
+        inset 0 3px 0 #fff6,
+        inset 0 -3px 0 #0006;
+    border-radius: 25%;
+    left: 20px;
+    bottom: -10px;
+    mask-image: linear-gradient(to top, black 13px,transparent 13px);
+}
+block:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: transparent;
+    z-index: 1;
+    box-shadow:
+        inset 0 3px 0 #0006,
+        inset 0 -3px 0 #fff6;
+    border-radius: 25%;
+    left: 20px;
+    top: -27px;
+    mask-image: linear-gradient(to top, black 13px,transparent 13px);
+}
+
+block#conversation {
+    --color: orange;
+}
+
+entry {
+    padding: 3px;
+    background: #0002;
+    box-shadow:
+        inset 0 3px 0 #0006,
+        inset 0 -3px 0 #fff6;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+entry:not(:first-child) {
+    margin-left: 5px;
+}
+
+variable {
+    background: rgb(0, 179, 45);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow:
+        inset 0 3px 0 #fff6,
+        inset 0 -3px 0 #0006;
+}
+
+variable#concat {
+    background: rgb(105, 105, 105);
+}
+
+select,input:not([type="checkbox"]) {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow:
+        inset 0 -3px 0 #fff6,
+        inset 0 3px 0 #0006;
+    background: #ccc;
+}
+
+variable#GET {
+    background: rgb(164, 0, 179);
+}
+
+block#command {
+    --color: blue;
+}
+
+block#title {
+    --color: rgb(0, 247, 255);
+}
+
+block#command div,
+block#title div {
+    display: flex;
+    transition: .5s;
+}
+
+block#command div b,
+block#title div b {
+    width: 100px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+block#command div:not(:first-child),
+block#title div:not(:first-child) {
+    margin-top: 5px;
+}
+
+block#command div input:not([type="checkbox"]),
+block#title div input:not([type="checkbox"]) {
+    width: calc(100% - 105px);
+}
+
+block#command div:has(input[type="checkbox"]:not(:checked)) {
+    opacity: .5;
+}
+
+block#condition {
+    --color: purple;
+}
+
+block#choice {
+    --color: rgb(255, 0, 157);
+}
+
+#true,#false,#blockentry {
+    background: #0002;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:
+        inset 0 3px 0 #0006,
+        inset 0 -3px 0 #fff6;
+}

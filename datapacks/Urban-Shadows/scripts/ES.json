@@ -1,0 +1,1751 @@
+[
+    {
+        ".type": "COMMAND",
+        "setFont":["main","fonts/HinaMincho-Regular.ttf"],
+        "font": "main"
+    },
+    {
+        ".type": "COMMAND",
+        "setFont":["title","fonts/CormorantSC-Regular.ttf"]
+    },
+    {
+        ".type": "TITLE",
+        "font": "title",
+        "fontSize": 32,
+        "title": "I",
+        "sub": "Todos los asesinatos llevan a Roma",
+        "fontColor": "#fff"
+    },
+    {
+        ".type": "COMMAND",
+        "font": "main",
+        "fontSize": 30,
+        "background": "backgrounds/dark.jpg",
+        "titleFont": "title",
+        "titleFontSize": 45
+    },
+    {
+        ".type": "CONDITION",
+        ".condition": {
+            ".type": "OPERATION",
+            ".a": [{
+                ".type": "GET",
+                ".get": "game.player.gender"
+            }],
+            ".operation": "equal",
+            ".b": ["male"]
+        },
+        ".true": [
+            {
+                ".type": "COMMAND",
+                "set": [
+                    "el_ella",
+                    "él"
+                ]
+            },
+            {
+                ".type": "COMMAND",
+                "set": [
+                    "o_a",
+                    "o"
+                ]
+            },
+            {
+                ".type": "COMMAND",
+                "set": [
+                    "_a",
+                    ""
+                ]
+            }
+        ],
+        ".false": [
+            {
+                ".type": "COMMAND",
+                "set": [
+                    "el_ella",
+                    "ella"
+                ]
+            },
+            {
+                ".type": "COMMAND",
+                "set": [
+                    "o_a",
+                    "a"
+                ]
+            },
+            {
+                ".type": "COMMAND",
+                "set": [
+                    "_a",
+                    "a"
+                ]
+            }
+        ]
+    },
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Recuerdo la sensación: el sonido irreconocible e inusual, pero sobre todo: la sensación de la niebla densa que me cubría, el deseo de dejar de estar sol",{".type":"GET",".get":"o_a"},"."
+        ]
+    ],
+    {
+        ".type": "COMMAND",
+        "background": "backgrounds/house.jpg"
+    },
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            "El teléfono sonó y ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " lo atendió con la misma emoción que un lunes por la mañana."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿Sí?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Morgan"
+        ],
+        [
+            "Hola, mi nombre es Morgan, trabajo en la policía. Hablo con ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            "?"
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Sí, diga. ¿Qué ocurre esta vez?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Morgan"
+        ],
+        [
+            "Generalmente no solemos hacer esto, pero necesitamos su ayuda."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Interesante táctica de reclutamiento. ¿Me van a enviar una placa por correo o saltamos directo a la parte de la conspiración?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Morgan"
+        ],
+        [
+            "Escuche, es algo fuerte, muy serio."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Claro. Porque no hay nada más urgente que llamar a un civil cuando tienes un apuñalamiento ritual y cero ideas."
+        ]
+    ],
+    [
+        "",
+        [
+            "Morgan"
+        ],
+        [
+            "Por favor; nunca antes hemos visto algo así, y creemos que podrías ayudarnos. Te pagaremos una hora aceptes o no, y si al final decides aceptar, te daremos detalles."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Entonces que no se diga que no soy flexible. Mándeme la dirección, prometo no tardar más de lo que usted tarda en llamar un equipo de busca y captura por mí."
+        ]
+    ],
+    {
+        ".type": "COMMAND",
+        "background": "backgrounds/street.jpg"
+    },
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Debes de ser ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            ", ¿cierto?"
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Sí, a menos que haya otr",
+            {
+                ".type": "GET",
+                ".get": "o_a"
+            },
+            " con mis mismos encantos y tendencia a llegar tarde."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "He oído hablar mucho de tí, la verdad es que tienes el respeto ganado entre nosotros."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Te lo agradezco. Siempre es bueno saber que el boca a boca sigue funcionando en la era digital."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Claro, entiendo. Deja que te presente a nuestra compañera. ¿Jessie?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "¿Entonces, me mueves la cita a las 14:00, entendido? LAS 14:00 NO QUIERO FALTAR A UN JUICIO QUE NI SI QUIERA SABÍA QUE TENÍA."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "¿Jess?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "Discúlpame un segundo. Fred, cariño, no me interrumpas mientras trabajo. Bien, ¿sigues ahí?, tengo una conferencia en una hora y media. Ya sé que no voy a llegar, precisamente por eso digo que la muevas."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " ha llegado."
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "Te llamo en diez minutos. DIEZ MINUTOS."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "..."
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "¡Hola, ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            "! Estoy muy contenta de que vayas a trabajar con nosotros, es todo un placer."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Gracias..."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "... Bueno, creo que es un buen momento para ponerte al día y explicarte el... asunto con calma."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "(¿Asunto? Esto no es un mail ni una serie de televisión)."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Bien, vamos al lío, hasta luego Jess."
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "Hasta luego; por favor, no me interrumpáis más."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Bien, ¿estás list",
+            {
+                ".type": "GET",
+                ".get": "o_a"
+            },
+            " para la historia?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Espero que así sea, porque vamos a ponerte al día."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¡Supongo que sí, espero que sea tan emocionante como el último trabajo de oficina que tuve!"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "(Esto va a ser difícil...)"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Sí, es algo así... pero Jessie hace el papeleo."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Eso suena como una oferta irrefutable. ¿Cuánto tiempo hasta que me envíen una placa?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "(En el fondo me gusta que sea así)"
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿No me digas que el alcalde me dará una de esas tijeras enormes para cortar una cinta estúpida como agradecimiento de ser un",
+            {
+                ".type": "GET",
+                ".get": "_a"
+            },
+            " incompetente?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Empecemos de una vez."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Hoy, en la madrugada, ha aparecido un ",
+            {
+                ".type": "CENSOR",
+                ".text": "cadáver"
+            },
+            ". Estaba hundido completamente en el contenedor. Una trabajadora del local lo encontró mientras tiraba la basura. Desde luego, no es una buena noticia para comenzar el día."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿A qué hora cierra el local? No quiero interrumpir sus \"peleas leves\" sin querer."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "A las 3:00, y no vas a interrumpir peleas, sospechamos que sea algo mayor: El ",
+            {
+                ".type": "CENSOR",
+                ".text": "cadáver"
+            },
+            " no tenía ningún ",
+            {
+                ".type": "CENSOR",
+                ".text": "órgano"
+            },
+            "."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "El episodio de hoy se pone interesante..."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "En realidad quieren creer que es una simple venta ilegal de órganos con ",
+            {
+                ".type": "CENSOR",
+                ".text": "asesinato"
+            },
+            " incluido."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "(La verdad es que ",
+            {
+                ".type": "GET",
+                ".get": "el_ella"
+            },
+            " da algo de miedo, pero también es muy divertid",
+            {
+                ".type": "GET",
+                ".get": "o_a"
+            },
+            ")"
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿Está abierto durante mucho tiempo? Me pregunto si el show aquí es prolongado."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "La verdad es que no mucho, abre a las 22:00..."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿Es un lugar inclusivo? Digo, ¿hace falta un yate, un Rolex o una membresía en el club de los vampiros ricos y pálidos para entrar?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Realmente cualquiera puede entrar, no hay que hacerse un máster o pasar un casting."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿Y qué pasa con los dueños? ¿No se dignan a pisar su propio circo? ¿O están demasiado ocupados contando billetes en una isla privada?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Ellos... tienen mucho dinero y simplemente lo invierten y gastan, a veces parece que el universo es el que les paga todo; nunca les falta dinero."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿Y de dónde sacaron la montaña de oro para montar este espectáculo?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Verás, nunca ha estado claro; creen que ganaron alguna apuesta, pero solo se sabe que apareció de un día para otro."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Vaya, para bancar este antro debieron ganar el premio gordo... o robarle la cartera a Midas. De todos modos, es \"inspiradora\" la manera tan discreta que han usado."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "(No sé si ",
+            {
+                ".type": "GET",
+                ".get": "el_ella"
+            },
+            " es así... o si lo que quiere hacer es manipularme...)"
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "He de admitir que no es un caso de los que se ven todos los días..."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "..."
+        ]
+    ],
+    {
+        ".type": "CHOOSE",
+        "Me lo voy a pasar muy bien con este caso...": [
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Me lo voy a pasar muy bien con este caso..."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "(No puedo decir que confíe completamente en ",{".type":"GET",".get":"el_ella"},")"
+                ]
+            ],
+            {
+                ".type": "COMMAND",
+                "set": ["keys.FredI",false]
+            }
+        ],
+        "Me alegro de estar aquí": [
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Me alegro de estar aquí."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "(Puede que de momento, y solo de momento, ",
+                    {
+                        ".type": "GET",
+                        ".get": "el_ella"
+                    },
+                    " sea alguien en quien pueda confiar)"
+                ]
+            ],
+            {
+                ".type": "COMMAND",
+                "set": ["keys.FredI",true]
+            }
+        ],
+        "¿Por qué estás tan callado; Fred?": [
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "¿Por qué estás tan callado; Fred? ¿Acaso estás pensando en algo?"
+                ],
+                {
+                    ".type": "COMMAND",
+                    "set": ["keys.FredI",false]
+                }
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "No, solo estaba observando la escena."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "(Él es algo raro)"
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "(Definitivamente no puedo confiar en ",
+                    {
+                        ".type": "GET",
+                        ".get": "el_ella"
+                    },
+                    ")"
+                ]
+            ],
+            {
+                ".type": "COMMAND",
+                "addkey": "NoFredI"
+            }
+        ]
+    },
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "De todos modos, es hora de que hagas una elección: ¿Quieres el caso?"
+        ]
+    ],
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            "Fred estrechó la mano para acercarle a ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " un contrato."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "¿Tienes una lupa o algo? Es para ese pequeño trozo de Arial 7px."
+        ]
+    ],
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            "Fred se mantuvo callado, así que ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " tuvo claro que el contrato o el caso era más grave de lo que parecía. Solo con un pequeño vistazo pudo ver los \"pequeños\" indicios y planes de la policía por si algo salía mal."
+        ]
+    ],
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            "CONTRATO DE CONFIDENCIALIDAD: Al firmar este contrato aceptas... En caso de amenaza o ",
+            {
+                ".type": "CENSOR",
+                ".text": "tortura"
+            },
+            ", si cualquier información es revelada, si consigues escapar, debes alertar a las autoridades, y aceptar las consecuencias que el fiscal evalúe convenientes... Evita todo contacto con extraños y limítate a hablar discreta y cuidadosamente..."
+        ]
+    ],
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " tuvo algo claro desde el prinicipio: ",
+            {
+                ".type": "GET",
+                ".get": "el_ella"
+            },
+            " no fue elegid",
+            {
+                ".type": "GET",
+                ".get": "o_a"
+            },
+            " al azar, el contrato prometía mucho dinero, y podrían haber contratado a cualquier detective más barato; pero no podían arriesgarse, en cierto modo... L",
+            {
+                ".type": "GET",
+                ".get": "o_a"
+            },
+            " \"necesitaban\"."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Vaya, no sabía que tenías a Satanás en vuestro equipo."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "¿Perdona?"
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Supongo que renunció por el estrés y Jessie vino para arreglar el desastre."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Creo que no entiendo lo que tratas de decirme."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Que no pienso firmar esto, dile a la del papeleo que prepare una estafa mejor."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Tu modelo es mucho mejor que el de la mayoría de detectives que hemos contratado."
+        ]
+    ],
+    [
+        "",
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            }
+        ],
+        [
+            "Pero supero incluso a los demás detectives que tienen este contrato, ¿verdad?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "Hablaré con mis superiores después, pero no hay tiempo que perder, Jessie te dará algo rápidamente."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "¿Jess?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "Fred, cariño, como no te calles te meto esa pistola tan profundo en la garganta de forma que lo más probable sea que termines sin estómago."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " no va a colaborar si no le consigues algo mejor que el contrato actual."
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "Te llamo en 5 minutos, Tom."
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "¿Estabas hablando con tu novio en medio del trabajo?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "¿Cariño, quieres el contrato, o prefieres quedarte sin él?"
+        ]
+    ],
+    [
+        "",
+        [
+            "Fred"
+        ],
+        [
+            "..."
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "Dame un minuto, creo que estaba por aquí..."
+        ]
+    ],
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            "Jessie abrió una carpeta enorme con un montón de papeles y anotaciones, y avanzó hasta una sección: \"Rangos de libertad S+\". Claro que no fue buena idea revelar a ",
+            {
+                ".type": "GET",
+                ".get": "game.player.name"
+            },
+            " la extensa cantidad de derechos que tenía."
+        ]
+    ],
+    [
+        "",
+        [
+            ""
+        ],
+        [
+            "El contrato no paraba de hacer referencias al código policial y a algunas restricciones mínimas, y llegó el momento de decidir."
+        ]
+    ],
+    [
+        "",
+        [
+            "Jessie"
+        ],
+        [
+            "¿Y bien? ¿Aceptas el caso?"
+        ]
+    ],
+    {
+        ".type": "CHOOSE",
+        "Rechazar": [
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Me temo que no voy a aceptarlo, tengo principios. Suerte, mantendré el tema confidencial."
+                ]
+            ],
+            {
+                ".type": "COMMAND",
+                "font": "fonts/HinaMincho-Regular.ttf",
+                "background": "backgrounds/dark.jpg"
+            },
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Recuerdo la sensación: el sonido irreconocible e inusual, pero sobre todo: la sensación de la niebla densa que me cubría, el deseo de dejar de estar solo."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Y entonces, se quedó enfrente. Nunca lo había contemplado, y suponía que los policías tampoco, pero eso no importa; lo importante es que sentí que mi alma salía de mi cuerpo mientras me atravesó el cuerpo con una de sus muchas armas."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Deseo dejar de estar vagando: de encontrar un lugar donde pueda terminar el dolor de estar dando vueltas sin dirección, sin rumbo: perdid",
+                    {
+                        ".type": "GET",
+                        ".get": "o_a"
+                    },
+                    "."
+                ]
+            ]
+        ],
+        "Aceptar": [
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Este contrato parece más entretenido..."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "¿Y bien?"
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Acepto."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Jessie"
+                ],
+                [
+                    "Te doy la bienvenida al décimo círculo del infierno: el sistema policial."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "No soy nuev",
+                    {
+                        ".type": "GET",
+                        ".get": "o_a"
+                    },
+                    " aquí, y supongo que tú tampoco, porque llegaste a conocer a Lucifer cuando llegaste a tu puesto, ¿no?"
+                ]
+            ],
+            [
+                "",
+                [
+                    "Jessie"
+                ],
+                [
+                    "Espera, ¿qué?"
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Fred no pudo contener una carcajada discreta."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Vamos al lío, ",{".type":"GET",".get":"game.player.name"},"."
+                ]
+            ],
+            {
+                ".type": "COMMAND",
+                "font": "fonts/HinaMincho-Regular.ttf",
+                "background": "backgrounds/dark.jpg"
+            },
+            {
+                ".type": "TITLE",
+                "font": "title",
+                "fontSize": 32,
+                "title": "II",
+                "sub": "El sucio \"Club Nocturno\"",
+                "fontColor": "#fff"
+            },
+            {
+                ".type": "COMMAND",
+                "font": "fonts/HinaMincho-Regular.ttf",
+                "background": "backgrounds/bar.jpg"
+            },
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "¿Esas barras no son las de los bomberos, no?"
+                ]
+            ],
+            [
+                "",
+                [
+                    "Jessie"
+                ],
+                [
+                    "No, parece que en el fondo esto no era solo un Bar... Investigaré los permisos de los dueños, puede que consiga una orden."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "Bien, comenzemos, te vemos fuera, Jess."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Jessie"
+                ],
+                [
+                    "No tardéis mucho, si pasáis más de 10 minutos ahí enviaré refuerzos."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "Yo... investigaré la barra y la cocina."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Fred comenzó a mirar las botellas de alcohól con ojos llorosos y admirativos, casi como un cachorro que quiere comer algo."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Oh, gracias por dejarme la oportunidad de poder escojer entre el despacho y la trastienda, pero a juzgar por tu cara despreocupada, me va a tocar hacer las dos, ¿verdad?"
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "..."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Estupendo..."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Tras dar varias vueltas en busca de nada específicamente, ",
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    },
+                    " llamó a los refuerzos sin dar esplicaciones y empujó a Fred fuera de la puerta para que estuviera a salvo. Nadie sabía aún no supieron lo que él había visto."
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "Código 666: Detrás del cuadro del despacho. Mirad si está despejado, si es seguro y avisadnos en cuanto terminéis. Jessie, saca tu máquina de escribir o lo que uses para redactar tus pactos infernales, quiero un informe precioso y completo. Y Fred, saca un arma para mí y una linterna para tí."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "Será al revés, ¿verdad?"
+                ]
+            ],
+            [
+                "",
+                [
+                    {
+                        ".type": "GET",
+                        ".get": "game.player.name"
+                    }
+                ],
+                [
+                    "¿Quién ha firmado \"El contrato de la omnipotencia\"? Exacto."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Jessie resopló, dándose cuenta de que en realidad acababa de crear un monstruo, pero ",{".type":"GET",".get":"game.player.name"}," estaba siendo just",{".type":"GET",".get":"o_a"},", y en el fondo y de cierto modo, ",
+                    {
+                        ".type": "GET",
+                        ".get": "el_ella"
+                    },
+                    " era superior."
+                ]
+            ],
+            {
+                ".type": "COMMAND",
+                "background":"backgrounds/organ-place-1.jpg"
+            },
+            [
+                "",
+                [
+                    "Refuerzos"
+                ],
+                [
+                    {".type": "GET", ".get": "game.player.name"}, ", hemos encontrado la habitación sospechosa."
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET", ".get": "game.player.name"}
+                ],
+                [
+                    "Inspector",{".type":"GET",".get":"_a"}," ",{".type":"GET",".get":"game.player.name"}," para tí."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Los compañeros comenzaron a mirarlo con una ligera mirada de asco."
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET",".get":"game.player.name"}
+                ],
+                [
+                    "Gracias."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Soltó una pequeña palmada en el hombro del comopañero con una sonrisa honesta aunque engreída."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Los refuerzos le dedicaron otra pequeña sonrisa como aprobación."
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET",".get":"game.player.name"}
+                ],
+                [
+                    "Ahora sacad ese frasco y salgamos de este lugar de \"pecado\"."
+                ]
+            ],
+            {
+                ".type":"COMMAND",
+                "background":"backgrounds/street.jpg"
+            },
+            [
+                "",
+                [
+                    "Jessie"
+                ],
+                [
+                    "Le diré a Tom que analice... \"esto\"..."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Fred"
+                ],
+                [
+                    "¿Por qué alguien querría guardar órganos en un lugar como ese?"
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET",".get":"game.player.name"}
+                ],
+                [
+                    "Es divertido."
+                ]
+            ],
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Todos los compañeros cercanos observaron a ",{".type":"GET",".get":"game.player.name"},", que de pronto parecía ser un",{".type":"GET",".get":"_a"}," psicópata."
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET",".get":"game.player.name"}
+                ],
+                [
+                    "En un lugar donde se comete \"pecado constante\", debe de ser divertido cometer también pecados capitales."
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET",".get":"game.player.name"}
+                ],
+                [
+                    "En fin, da igual. Nos vemos mañana, tengo que dormir."
+                ]
+            ],
+            [
+                "",
+                [
+                    "Jessie"
+                ],
+                [
+                    "A las 9:00 tendremos una reunión via Zoom, no olvides conectarte."
+                ]
+            ],
+            [
+                "",
+                [
+                    {".type":"GET",".get":"game.player.name"}
+                ],
+                [
+                    "Si no respondo, llamadme al movil y con suerte estaré despiert",{".type":"GET",".get":"o_a"},", hasta mañana."
+                ]
+            ],
+            {
+                ".type":"CONDITION",
+                ".condition":{
+                    ".type":"OPERATION",
+                    ".a":[{".type":"GET",".get":"keys.FredI"}],
+                    ".operation":"equal",
+                    ".b":[true]
+                },
+                ".true":[
+                    [
+                        "",
+                        [
+                            "Fred"
+                        ],
+                        [
+                            "Espera, ",{".type":"GET",".get":"game.player.name"},"."
+                        ]
+                    ],
+                    [
+                        "",
+                        [
+                            {".type":"GET",".get":"game.player.name"}
+                        ],
+                        [
+                            "¿Pasa algo?"
+                        ]
+                    ],
+                    [
+                        "",
+                        [
+                            "Fred"
+                        ],
+                        [
+                            "¿Querrías venir a cenar conmigo? Y hablamos sobre el caso."
+                        ]
+                    ],
+                    [
+                        "",
+                        [
+                            {".type":"GET",".get":"game.player.name"}
+                        ],
+                        [
+                            "(Interesante propuesta, no sé si el tierno peluche de oso se cree que vaya a conquistar a mi corazoncito de plomo, pero es... interesante)"
+                        ]
+                    ],
+                    [
+                        "",
+                        [
+                            "Fred"
+                        ],
+                        [
+                            "¿Qué me dices?"
+                        ]
+                    ],
+                    {
+                        ".type":"CHOOSE",
+                        "Claro":[
+                            [
+                                "",
+                                [
+                                    {".type":"GET",".get":"game.player.name"}
+                                ],
+                                [
+                                    "Claro. (Quiero ver a dónde llega esto...)"
+                                ]
+                            ],
+                            [
+                                "",
+                                [
+                                    "Fred"
+                                ],
+                                [
+                                    "¿Nos vemos en una hora en el CiPASSO en una hora?"
+                                ]
+                            ],
+                            [
+                                "",
+                                [
+                                    {".type":"GET",".get":"game.player.name"}
+                                ],
+                                [
+                                    "Vale, claro."
+                                ]
+                            ],
+                            {
+                                ".type":"COMMAND",
+                                "set":["key.FredII",true]
+                            }
+                        ],
+                        "No":[
+                            [
+                                "",
+                                [
+                                    {".type":"GET",".get":"game.player.name"}
+                                ],
+                                [
+                                    "¿Qué? Claro que no, somos compañeros."
+                                ]
+                            ],
+                            [
+                                "",
+                                [
+                                    {".type":"GET",".get":"game.player.name"}
+                                ],
+                                [
+                                    "Disculpa, yo... no quería ofenderte."
+                                ]
+                            ],
+                            [
+                                "",
+                                [
+                                    {".type":"GET",".get":"game.player.name"}
+                                ],
+                                [
+                                    "No vengo porque quiero, lo hago porque me pagáis y es entretenido, no busco más, ¿entendido?"
+                                ]
+                            ],
+                            [
+                                "",
+                                [
+                                    {".type":"GET",".get":"game.player.name"}
+                                ],
+                                [
+                                    "Sí... perdona."
+                                ]
+                            ],
+                            {
+                                ".type":"COMMAND",
+                                "set":["key.FredII",false]
+                            }
+                        ]
+                    }
+                ],
+                ".false":[
+                    [
+                        "",
+                        [
+                            ""
+                        ],
+                        [
+                            "Te vas de la escena cansad",{".type":"GET",".get":"o_a"}
+                        ]
+                    ],
+                    {
+                        ".type":"COMMAND",
+                        "set":["key.FredII",false]
+                    }
+                ]
+            },
+            [
+                "",
+                [
+                    ""
+                ],
+                [
+                    "Al llegar a casa te duermes rápidamente."
+                ]
+            ]
+        ]
+    }
+]
