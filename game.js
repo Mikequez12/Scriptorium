@@ -4,7 +4,7 @@ var game = new Game('datapacks/Urban-Shadows','ES','female','Dalia');
 setGame(game);
 
 async function main() {
-    let parsedScript = parseScript(await getFile(`${game.src}/scripts/${game.lang}.JSON`,(response)=>response.json()));
+    let parsedScript = parseScript(await getFile(`${game.src}/scripts/${game.lang}.json`,(response)=>response.json()));
     console.log(
         parsedScript
     );
