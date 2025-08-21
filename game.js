@@ -1,6 +1,6 @@
 import { parseScript, getFile, setGame, readScript, Game } from "./scriptorium.js";
 
-var game = new Game('datapacks/Urban-Shadows','ES','female','Dalia');
+var game = new Game(window.location.hash.slice(1)||'datapacks/Urban-Shadows','ES','female','Dalia');
 setGame(game);
 
 async function main() {
@@ -10,4 +10,5 @@ async function main() {
     );
     await readScript(parsedScript,0,(l)=>l<=999)
 }
+
 main()
